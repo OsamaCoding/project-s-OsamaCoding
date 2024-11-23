@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  <!-- <html dir="rtl">للعربة عدل على على الكود هاكذا -->
+
+  <head>
+    <title>Hsoub Academy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="stayle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+    <!-- <script>
+      $(function () {
+        $("a").text("wiki hsoub").attr("href", "https://wiki.hsoub.com/jQuery");
+      });
+    </script> -->
+
+    <!-- <script>
+    //   $(function () {
+    //     $(".title").addClass("titleStyle");
+    //   });
+    // </script> -->
+
+    <!-- // <style>
+    //   .titleStyle {
+    //     color: orangered;
+    //     text-decoration: underline;
+    //   }
+    </style> -->
+
+    <!-- <script>
+      $(function () {
+        $("input:button").val("hsoub academy");
+      });
+    </script> -->
+
+    <!-- <script>
+      $(function () {
+        $("#content").children("p").css("color", "blue");
+      });
+    </script> -->
+
+    <!-- <script>
+      $(function () {
+        $("<p> this is apragraph </p>").appendTo("#content");
+        $("#content").after("<p> this is a new paragraph </p>");
+        $("#content").before("<h3> this is new title </h3>");
+        $("#content").remove();
+      });
+    </script> -->
+
+    <!-- <script>
+      $(function () {
+        $("#content").click(function () {
+          alert("You clicked on the content");
+        });
+      });
+    </script> -->
+
+    <!-- <script>
+      $(function () {
+        $("#txtName").focus(function () {
+          $(this).addClass("inputStyle");
+        });
+      });
+    </script>
+
+    <style>
+      .inputStyle {
+        background-color: peru;
+        border: 1px solid green;
+      }
+    </style> -->
+
+    <!-- <script>
+      $(function () {
+        $("#selectBtn").click(function () {
+          $("input:checkbox").attr("checked", "checked");
+          $(this).attr("disabled", "disabled");
+        });
+
+        $("#deselectBtn").click(function () {
+          $("input:checkbox").removeAttr("checked");
+        });
+
+        $("#languages").change(function () {
+          alert($(this).val());
+        });
+      });
+    </script> -->
+
+    <!-- <script>
+      $(function () {
+        $("#goBottom").click(function () {
+          $("html, body").animate({ scrollTop: $(document).height() }, 2000);
+          return false;
+        });
+        $("#goTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+
+        $(document).contextmenu(function () {
+          return false;
+        });
+      });
+    </script>
+    <style>
+      div {
+        height: 400px;
+      }
+    </style> -->
+
+    <!-- <style>
+      #content {
+        height: 200px;
+        width: 200px;
+        background-color: blueviolet;
+      }
+    </style>
+
+    <script>
+      $(function () {
+        $("#slideToggle").click(function () {
+          $("#content").slideToggle(1000);
+        });
+      });
+    </script> -->
+
+    <!-- <style>
+      .error {
+        color: red;
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      $(function () {
+        $("#myform").validate({
+          rules: {
+            userName: {
+              required: true,
+            },
+            mail: {
+              required: true,
+              email: true,
+            },
+            agree: {
+              required: true,
+            },
+          },
+        });
+      });
+    </script> -->
+
+    <!-- <script>
+      $(function () {
+        $("#load").click(function () {
+          $.ajax({
+            url: "https://jsonplaceholder.typicode.com/todos",
+            type: "GET",
+            dataType: "json",
+            success: function (data, status) {
+              var todos = "";
+              $.each(data, function (kay, value) {
+                todos += "<tr>";
+                todos += "<td>" + value.id + "</td>";
+                todos += "<td>" + value.userId + "</td>";
+                todos += "<td>" + value.title + "</td>";
+                todos += "<td>" + value.completed + "</td>";
+                todos += "</tr>";
+              });
+              $("#todos").append(todos);
+            },
+
+            error: function (result, status, error) {
+              console.log("Cannot load data");
+            },
+
+            complete: function (result, status) {
+              console.log("loading completed!");
+            },
+          });
+        });
+      });
+    </script> -->
+  </head>
+
+  <body>
+    <!-- <button id="load">Load Data</button>
+    <table border="1" id="todos">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>UserId</th>
+          <th>Title</th>
+          <th>completed</th>
+        </tr>
+      </thead>
+    </table> -->
+
+    <!-- <h1>Subscription Form:</h1>
+    <form id="myform">
+      <table>
+        <tr>
+          <td><label for="userName">User Name:</label></td>
+          <td><input type="text" id="userName" name="userName" /><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email:</label>
+          </td>
+          <td><input type="text" id="mail" name="mail" /><br /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" id="agree" name="agree" />
+            <label for="agree">I agree to the terms and condition</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Register" />
+          </td>
+          <td>
+            <input type="reset" value="Clear" />
+          </td>
+        </tr>
+      </table>
+    </form> -->
+
+    <!-- <div id="content"></div>
+    <button id="slideToggle">Slid Up / Slide Down</button> -->
+
+    <!-- <div>
+      <a href="#" id="goBottom">Go to the bottom</a>
+    </div>
+    <div id="bottom">
+      <a href="#" id="goTop">Go to the Top</a>
+    </div> -->
+
+    <!-- <form>
+      <input id="html" value="" type="checkbox" />
+      <label for=" html">HTML</label><br />
+      <input id="css" value="" type="checkbox" />
+      <label for="css">CSS</label><br />
+      <input id="javascript" value="" type="checkbox" />
+      <label for=" javascript">JavaScripts</label><br />
+      <input id="jquery" value="" type="checkbox" />
+      <label for=" jquery">jQuery</label><br />
+      <hr />
+      <select id="languages" name="languages">
+        <option value="java">Java</option>
+        <option value="cs">C#</option>
+        <option value="php">PHP</option>
+        <option value="vb">Visual Basic</option>
+      </select>
+      <br /><br />
+      <input type="button" id="selectBtn" value="Select All" />
+      <input type="button" id="deselectBtn" value="Deselect All" />
+    </form> -->
+
+    <!-- <form action="">
+      <input type="text" id="txtName" />
+    </form> -->
+
+    <!-- <div id="content">
+      <h4>This is title</h4>
+    </div> -->
+
+    <!-- <div id="content">
+      <h4>This is title</h4>
+      <p>This is a paragraph</p>
+    </div> -->
+
+    <!-- <form action="">
+      <input type="text" name="txtName" />
+      <input type="text" name="txtAge" />
+      <input type="button" />
+    </form> -->
+
+    <!--اخيرا خلصناJQure اكوادها الفوق دي  وكل كود بربوط بي وظيفة في الهيد -->
+
+    <!-- <h1 class="title">This is the frist title</h1>
+    <h1 class="title">This is the socand title</h1> -->
+
+    <!--This is a heading</h1>
+        <b>This is a bold text</b>
+        <u>This is an underlined text</u>
+        <i>This is an italic text</i>
+        <s>This is a strike text</s>
+        <sup>This is a supscript text</sup>
+        <sub>This is a subscript text</sub>
+        <small>This is a small text</small>
+        <big>This is a big text</big>-->
+
+    <!-- <h1>This is the heading 1</h1>
+         <h2>This is the heading 2</h2>
+         <h3>This is the heading 3</h3>
+         <h4>This is the heading 4</h4>
+         <h5>This is the heading 5</h5>
+         <h6>This is the heading 6</h6> -->
+
+    <!-- <p>
+             this is the frist line <br>
+             this is the second line <br>
+             <hr>
+            And this is another lin after the HR (horizontal rule)
+         </p> -->
+
+    <!-- <p>
+                this is a paragraph 
+                <span style="color:brown"> that contains a specific infomation
+                </span>
+                <div style="color: blue;"> and this another text</div>
+         </p> -->
+
+    <!-- <img src="صورة.jpg" alt="صورة الصورة"> -->
+
+    <!-- <ol start="10" type="">
+             <li>osama1</li>        
+             <li>osama2</li>
+             <li>osama3</li>
+             <li>osama4</li>
+             <li>osama5</li>
+             <li>osama6</li>
+             <li>osama7</li>
+             <li>osama8</li>
+             <li>osama9</li>
+             <li>osama10</li>
+         </ol> -->
+
+    <!-- <h1>عناصر تحضير البيض:</h1>
+         <ul type="circle">            
+             <li>بيض</li>
+             <li>طوة</li>
+             <li>زيت </li>
+             <li>ملح</li>
+         </ul> -->
+
+    <!-- <h2>تفاصيل الكتاب</h2>
+         <dl>
+            <dt>موضوع الكتاب:</dt>
+            <dd>البرمجة باستخدامhtml</dd>
+            <dt>سعر الكتاب: </dt>
+            <dd>30$</dd>
+         </dl> -->
+
+    <!-- <h3>Basic dictionary:</h3>
+         <table>
+            <tr>
+                <th>English word</th>
+                <th>Translation in French</th>    
+                <th>Translation in Atabic</th>
+            </tr>
+            <tr>
+                <td>Programming</td>    
+                <td>Programmtion</td>    
+                <td>برمجة</td>
+            </tr>
+            <tr>
+               <td>Programming language</td>         
+               <td>language de Programmation</td>     
+               <td>لغة برمجة</td>     
+            </tr>
+            <tr>
+                <td>Program </td> 
+                <td>Programme</td>    
+                <td>برنامج</td> 
+            </tr> 
+         </table> -->
+
+    <!-- <table border="1">
+             <caption>بعض المدن الرئيسية في العالم</caption>
+             <thead>
+                <tr>
+                    <th>البلد</th>
+                    <th>المدينة الرئيسية</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>مصر</td>
+                    <td>القاهرة</td>
+                </tr>
+                <tr>
+                    <td>السودان</td>
+                    <td>الخرطوم</td>
+                </tr>
+             </tbody>
+             <tfoot>
+                <tr>
+                    <td colspan="2">المزيد هنا...</td>
+                </tr>
+             </tfoot>
+         </table>
+
+         <table border="1">
+            <caption>بعض المدن الرئيسية في العالم</caption>
+            <thead>
+               <tr>
+                   <th>البلد</th>
+                   <th>المدينة الرئيسية</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                   <td rowspan="2">مصر</td>
+                   <td>القاهرة</td>
+               </tr>
+               <tr>
+                   <td>الصعيد</td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                   <td colspan="2">المزيد هنا...</td>
+               </tr>
+            </tfoot>
+        </table> -->
+
+    <!-- <a href="https://academy.hsoub.com/courses/front-end-web-development/web-development-intro/html-basics/17-%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%A8%D8%B7-%D8%A7%D9%84%D9%81%D8%A7%D8%A6%D9%82%D8%A9-r3188/">
+            Clik here to open HSOUB Acadeny website
+        </a> -->
+
+    <!-- <a href="https://mywebsite.com/file.pdf">
+            Download the File
+        </a> -->
+
+    <!-- <div style="height: 600px;">
+            <a href="#description">
+                View product description
+            </a>
+        </div>
+        <p id="description" style="height: 400px;">
+            This is the descriptoin of the selected product.
+        </p> -->
+
+    <!-- <form>
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName"><br>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd"><br>
+
+            <input type="submit" value="log In">
+        </form> -->
+
+    <!-- نحطها في جدول عشان تكون بشكل منظم  -->
+
+    <!-- <form >
+            <table>
+                <tr>
+                    <td>
+                        <label for="userName">User Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="userName"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pwd">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pwd" name="pwd"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="log In">
+                    </td>
+                </tr>
+            </table>
+        </form> -->
+
+    <!--تب سَلْمان الفارسيّ إلى أبي الدّرداء: أما بعد فإنك لن تنال ما تُريد إلا بترْكِ ما تشتهي ولن تنال ما تأمُل إلا بالصَّبر على ما تَكْره. فَلْيكُن كلامُك ذِكْراً وصَمْتك فِكْرا ونظرك عِبَر-->
+
+    <!-- <h1>Subscription Form:</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="userName">User Name:</label><br>
+                    </td>
+                    <td>   
+                        <input type="text" id="userName" name="userName"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pwd">password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pwd" name="pwd"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Register plan:</label>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="radio" id="starter" name="plan" value="starter">
+                            <label for="starter">Starter</label>
+                        </div>
+                      
+                        <div>
+                            <input type="radio" id="business" name="plan" value="business">
+                            <label for="business">Besiness</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="pramium" name="plan" value="premium">
+                            <label for="premium">Premium</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="description">Description</label>
+                    </td>
+                    <td>
+                        <textarea name="description" id="description"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="agree">Agree:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree">I agree to the terms and condition</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                    <td>
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </form> -->
+
+    <!-- <h3>اضغط هنا لتشغيل الصوت</h3>
+        <audio id="myAduio" controls>
+            <source src="Convert محاضره 5 هستولوجي (EPITHELIUM) د.قنديل.mp3" type="audio/mpeg">
+        </audio> -->
+
+    <!-- <video width="640" height="480" controls>
+            <source src="من-ترك-نفسه-بلا-جدول-جدولته-الم-لهيات-144p-30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+
+    <!-- <header>
+            This is the header of the page
+        </header>
+
+        <nav>
+            This is the Navbar
+        </nav>
+
+        <article>
+            <h1>Article title</h1>
+            <section>
+                Article content section
+            </section>
+            <aside>
+                Article sidebar
+            </aside>
+        </article>
+
+        <footer>
+            This the footer of the page
+        </footer> -->
+
+    <!-- مبروك لقد انتهيت من HTML -->
+
+    <!-- <h1 id="title">This is a title</h1>
+        <h1 class="title">And this is another</h1> 
+            
+        <div>
+            <h1>This is a title inside a Div</h1>
+        </div>
+
+        <form action="">
+            <input type="text"><br>
+            <input type="password">
+        </form>
+
+        <h3>osama amk AK36</h3> -->
+
+    <!-- <h1>AK36 osama 3mk</h1> -->
+
+    <!-- <div class="content">
+            <p>
+                this is a paragraph
+            </p>
+            <div> -->
+
+    <!-- <a href=https://youtu.be/-xwYPGiJlu8 >
+                    Go to video in youtube
+                <a> -->
+
+    <!-- <div class="frist"></div>
+                    <div class="content">
+                        <h1>This is the title</h1>
+                    </div>
+                    <div class="last"></div> -->
+
+    <!-- <h1>Top 10 osama</h1>
+                    <ol>
+                    <li>abok</li>
+                    <li>abok</li>
+                    <li>abok</li>
+                    <li>abok</li>
+                    <li>abok</li>
+                    <li>abok</li>
+                    <li>abok</li>
+                    <li>abok</li>
+                    <li>abok</li>
+                    <li>abok</li>    
+                    </ol>                -->
+
+    <!-- <h1>gss</h1>
+                    <ul>
+                        <li>gssa hhhh</li>
+                        <li>gssa hhhh</li>
+                        <li>gssa hhhh</li>
+                        <li>gssa hhhh</li>                        
+                    </ul> -->
+
+    <!-- <h3>Basic dictionary:</h3>
+         <table>
+            <tr>
+                <th>English word</th>
+                <th>Translation in French</th>    
+                <th>Translation in Atabic</th>
+            </tr>
+            <tr>
+                <td>Programming</td>    
+                <td>Programmtion</td>    
+                <td>برمجة</td>
+            </tr>
+            <tr>
+               <td>Programming language</td>         
+               <td>language de Programmation</td>     
+               <td>لغة برمجة</td>     
+            </tr>
+            <tr>
+                <td>Program </td> 
+                <td>Programme</td>    
+                <td>برنامج</td> 
+            </tr> 
+         </table> -->
+
+    <!-- <form>
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName"><br>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd"><br>
+
+            <input type="submit" value="log In">
+        </form> -->
+
+    <!-- <div class="container">
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+        </div> -->
+
+    <!-- <div class="container">
+            <div>First</div>
+            <div>Second</div>
+            <div>Third</div>
+        </div> -->
+
+    <!-- <div class="content">
+            <span>Div 1</span>
+        </div>
+        <div class="content">
+            <span>Div 2</span>
+        </div>
+        <div class="content">
+            <span>Div 3</span>
+        </div> -->
+
+    <!-- <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <aside>
+                <h1>Hello everyone!</h1>
+                <p>Welcome to hsoub academy</p>
+            </aside>
+        </section>
+        <div class="clear">
+            <p>
+                THis id the corui prgraf
+            </p>
+        </div> -->
+
+    <!-- <h1>مرحبا بك عزيزي الزائر</h1>
+
+        <i class="fa fa-home" style="color: purple; font-size: 90px;"></i>
+        <i class="fa fa-car"></i>
+        <i class="fa fa-lock"></i>
+        <i class="fa fa-users"></i> -->
+
+    <!-- CSSمبروك لقد انتهيت من HTML -->
+
+    <!-- <h1 id="title"></h1> -->
+
+    <!-- <form action="">
+      <label for="txtName">Enter your name:</label>
+      <input type="text" name="txtName" id="txtName" />
+      <input type="button" onclick="sayHello()" value="Click here" />
+    </form> -->
+
+    <!-- <h1 id="title"></h1>
+    <p class="content"></p>
+    <p class="description"></p> -->
+
+    <!-- <div id="content"></div> -->
+
+    <!-- <input type="text" name="txtName" id="txtName" onfocus="changeStyle()" /> -->
+
+    <!-- <h1 id="title">This is a title</h1> -->
+
+    <!-- <h1>Subscription Form:</h1>
+    <form onsubmit="return validate();">
+      <table>
+        <tr>
+          <td><label for="age">Age:</label><br /></td>
+          <td><input type="text" id="age" /><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="agree">Agree:</label>
+          </td>
+          <td colspan="2">
+            <input type="checkbox" id="agree" />
+            <label for="agree">I agree to the terms and condition</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="submit" value="Register" />
+          </td>
+          <td>
+            <input type="reset" value="Clear" />
+          </td>
+        </tr>
+      </table>
+    </form> -->
+
+    <!-- CSSمبروك لقد انتهيت من HTML and JavaScripts -->
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

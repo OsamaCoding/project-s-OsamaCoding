@@ -1,0 +1,252 @@
+/* #title{
+    color: red;
+    background-color: cyan;
+}
+.title{
+    color: blue;
+    background-color: aqua;
+}
+
+div > h1{
+    color: rgb(175, 239, 12);
+}
+
+input[type = 'text']{
+    border: 2px solid brown;
+}
+
+h3{
+    color: blue;
+    /* background-color:rgb(red, green, blue);
+    background-color: rgba(red, green, blue, alpha); */
+/*background-color: rgba(10, 150, 17, 0.5);
+} */
+
+/* h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    font-variant:small-caps;
+    font-style: italic;
+} */
+
+/* h1{
+    color: purple;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 3px 2px rgb(198, 194, 194);
+    text-indent: 3cm;
+    direction: ltr;
+} */
+
+/* .content{
+    background-image: url(صورة.jpg);
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 1400px;
+    width: 1400px;
+} */
+
+/* a:link{
+    color: orangered;
+    text-decoration: underline;
+    background-color: papayawhip;    
+ }
+
+ a:visited{
+    color: purple;
+    text-decoration: underline;
+ }
+ 
+ a:hover{
+    color: palegoldenrod;
+    text-decoration: underline;
+    background-color: plum;
+ }
+
+ a:active{
+    color: coral;
+ } */
+
+/* .content{
+    border:2px solid blue; /* border */
+/*color: cornflowerblue; /* content color */
+/*margin: 20px;            /* margin */
+/* padding: 10px;           /* padding */
+/*} */
+
+/* .content{
+    width: 200px;
+    height: 200px;
+    background-color: darkmagenta;
+    margin-right: 20px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+/* margin: 20px; */
+/* padding: 20px;
+ } */
+
+/* .frist{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+ } */
+/* .last{
+    width: 200px;
+    height: 200px;
+    background-color: indianred;
+  } */
+
+/* li{list-style-type: upper-alpha;} */
+
+/* ul{
+    li{
+        margin: 0;
+        padding: 36px 0 36px 84px;
+        list-style: none;
+        background-image: url(صورة.jpg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 40px;
+        /* ده مثال لكن انت المفروض لو بتعمل كده يكون عندك صورة دائرة صفيره وتكتب كده list-style-image: url(صورة مناسبة صغيرة); */
+
+/* list-style: none; */
+/* } 
+  } */
+/* ul li::before{
+	content: "";
+	margin: 0;
+	padding: 36px;
+	background-image: url(صورة.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 8px;
+}
+
+table td , th{
+	border: 1px solid gray ;
+	padding: 12px;
+	
+}
+
+table{
+	border-collapse:collapse;
+}
+
+th{
+	background-image:url(صورة.jpg)
+}
+
+form{
+	background-color:rgb(214,221,235);
+}
+    
+}/*/
+
+/* table td, th{
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+table{
+    border-collapse: collapse;
+}
+ 
+th{
+    background-color: lightcyan;
+    color: mediumslateblue;
+} */
+
+/* form{
+    background-color: rgb(214, 221, 235);
+    padding: 20px;
+    width: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 35px;
+    margin: 20px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 15px;
+}
+
+label{
+    color: rgb(114, 113, 113);
+}
+
+input[type='text'], input[type='password']{
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+}
+
+input[type='submit']{
+    width: 100%; 
+    height: 35px;
+    margin-top: 15px;
+    background-color: rgb(24, 135, 209);
+    border: 1px solid rgb(98, 106, 175);
+    text-transform: uppercase;
+    color: #ffffff;
+} */
+
+/* .post{
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    border: 1px solid gray;
+    background-color: lavender;
+}
+
+
+.post:last-child {
+    position: fixed;
+    left: 40px;
+    top: 50px;
+}
+
+.container{
+    height: 900px;
+} */
+
+/* .container > div {
+    background-color: #49927a;
+    width: 400px;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
+
+/* .content{
+    background-color: indianred;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    display: inline-block;
+} */
+
+/* nav{
+    float: left;
+    width: 200px;
+}
+
+.clear{
+    clear: left;
+} */
+
+/* @font-face {
+    font-family: Reem Kufi;
+    src: url(font/ReemKufi-Bold.ttf);
+}
+
+h1{
+    font-family: Reem kufi;
+    color: purple;
+} */
